@@ -1,0 +1,77 @@
+.gpt3__cta{
+    background: var(--gradient-bar);
+    border:none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+}
+.gpt3__cta.section__margin{
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.gpt3__cta-container h1{
+    font-size: 1.2rem;
+    font-family: var(--font-family); 
+    font-weight: 1000;
+}
+.gpt3__cta-container p{
+    font-weight: 600;
+    font-size: 0.8rem;
+    font-family: var(--font-family);  
+}
+.gpt3__cta-container_button button{
+    font-size: 1rem;
+    font-family: var(--font-family); 
+    font-weight: 1000;
+    color:#FFFFFF;
+    background-color: black;
+    border: solid 1px black;
+    border-radius: 40px;
+    padding:0.8rem 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1080px){
+    .gpt3__cta{
+        padding: 1.8rem 2rem;
+    }
+    .gpt3__cta.section__margin{
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    .gpt3__cta-container p{
+        font-size: 0.63rem; 
+    }
+    .gpt3__cta-container h1{
+        font-size: 1rem;
+    }
+    .gpt3__cta-container_button button{
+        font-size: 0.8rem;
+        min-width: 130px;
+    }
+}
+@media screen and (max-width: 450px){
+    .gpt3__cta{
+        padding: 1rem 1.1rem;
+        border-radius: 10px;
+    }
+    .gpt3__cta.gpt3__cta.section__margin{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .gpt3__cta-container p{
+        font-size: 0.6rem; 
+    }
+    .gpt3__cta-container h1{
+        font-size: 0.8rem;
+    }
+    .gpt3__cta-container_button button{
+        padding:0.7rem 0.85rem;
+        font-size: 0.8rem;
+        min-width: 107px;
+    }
+}

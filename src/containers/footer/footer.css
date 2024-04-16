@@ -1,0 +1,98 @@
+.gpt3__footer{
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #031B34;
+    margin-top: 4rem;
+    z-index: -1;
+}
+.gpt3__footer h1{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2.6rem;
+    letter-spacing: -1px;
+}
+.gradient-border button{
+    display: block;
+    color:#FFFFFF;
+    background:#031B34;
+    border: none;
+    height: 100%;
+    border-radius: 3px;
+    padding: 0.7rem;
+}
+
+.gradient-border {
+    --borderWidth: 3px;
+    background: #1D1F20;
+    position: relative;
+    border-radius: var(--borderWidth);
+    z-index: 1;
+}
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(2 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+    }
+.gpt3__footer-container{
+    width: 85%;
+    color:#FFFFFF;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 5rem;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+.gpt3__footer-container a,p{
+    font-size: 0.8rem;
+}
+.gpt3__footer-GPT3 img{
+    width: 62.56px;
+    height: 16.02px;
+}
+.gpt3__footer-container *{
+    display: flex;
+    flex-direction: column;
+}
+.gpt3__footer p:last-child{
+    color:#FFFFFF;
+}
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  @media screen and (max-width:450px){
+    .gpt3__footer-container a,p{
+        font-size: 0.6rem;
+    }
+    .gpt3__footer-container h4{
+        font-size: 0.75rem;
+    }
+    .gpt3__footer-container *{
+        padding-left: 0.5rem;
+    }
+    .gpt3__footer-container div:first-child{
+        padding-left: 0rem;
+    }
+    .gpt3__footer-container{
+        width: 100%;
+    }
+  }

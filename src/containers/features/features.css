@@ -1,0 +1,91 @@
+.gpt3__feature{
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    padding: 9rem 2rem;
+    overflow: visible;
+    position: relative;
+}
+
+.gpt3__feature_bg{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: -10rem;
+    left: -10rem;
+    background:radial-gradient(circle at 30% 50%, rgba(0, 40, 83, 0.489) -5%, #040C18 60%);
+}
+.gpt3__feature-header{
+    flex:1;
+    z-index: 2;
+}
+.gpt3__feature-header h1{
+    color: var(--gradient-text);
+    font-family: var(--font-family);
+    font-weight: 800;
+    text-align: start;
+    margin-bottom: 3rem;
+}
+.gpt3__feature-header a{
+    font-family: var(--font-family);
+    color: #FF8A71;
+    font-weight: bold;
+}
+.gpt3__feature_space{
+    min-width: 10rem;
+    height: 100%;
+}
+.gpt3__feature-container{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    flex:1.5;
+}
+
+@media screen and (max-width: 1050px){
+    .gpt3__feature{
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+    .gpt3__feature-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items:flex-start;
+    }
+    .gpt3__feature-header h1{
+        font-size: 1.5rem;
+        text-align: start;
+        margin-bottom: 1rem;
+        max-width: 90%;
+    }
+    .gpt3__feature-header a{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    .gpt3__feature_space{
+        min-height: 3rem;
+    }
+    .gpt3__feature-container .gpt3__features-container_space{
+        min-width: 0rem;
+    }
+    .gpt3__feature-container .gpt3__features-container_title{
+        margin-bottom: 2.5rem;
+        flex:1.2;
+    }
+    .gpt3__feature-container .gpt3__features-container h1{
+        font-size: 1rem;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    .gpt3__feature_bg{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: -4rem;
+        left: -4rem;
+        background:radial-gradient(circle at 30% 50%, rgba(0, 40, 83, 0.489) -5%, #040C18 60%);
+    }
+}
+
